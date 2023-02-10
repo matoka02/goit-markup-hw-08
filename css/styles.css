@@ -71,7 +71,7 @@ img{
 /*====Start Header====*/
 
 .page-header{
-    border-bottom: 24px;
+    border-bottom: 1px solid var(--secondary-text-color-teme-dark);
 }
 
 .header-container{
@@ -202,23 +202,23 @@ img{
 
 .feature{
     padding-top: 94px;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 }
 
 .feature-list-items{
     width: 270px;
-    margin-bottom: 10px;
+    gap: 30px 10px;
 }
 
 .feature-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
 .feature-item{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -237,8 +237,9 @@ img{
 .feature-list-photos{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: flex-start;
+}
+
+.feature-list-photo:not(:last-child){
     margin-right: 30px;
 }
 
@@ -247,8 +248,8 @@ img{
 /*====Start Team====*/
 
 .our-team{
-    padding-top: 180px;
-    padding-bottom: 90px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     background-color: var(--background-color-teme-light);
 }
@@ -261,18 +262,20 @@ img{
 }
 
 .about-team-items{
-    flex-basis: calc((100%-4*30px)/4);
+    flex-basis: calc((100% - 4*30px)/4);
     margin-left: 30px;
     margin-top: 30px;
     border-bottom: var(--secondary-text-color-teme-light);
 }
 
 .about-team-text{
-    padding: 30px 70px;
-    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
 }
 
 .about-team-name{
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -293,15 +296,17 @@ img{
 /*====Start Footer====*/
 
 .footer-container{
-    padding-top: 60px;
+    /* padding-top: 60px;
 
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 
 .page-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-color-teme-dark);
 }
 
@@ -310,10 +315,10 @@ img{
 }
 
 .contact-address{
+    margin-top: 20px;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 60px;
 
     font-style: normal;
     font-weight: 400;
@@ -324,6 +329,7 @@ img{
 }
 
 .contacts{
+    margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -379,7 +385,7 @@ img{
 }
 
 .project-items-list{
-    flex-basis: calc((100%-4*30px)/3);
+    flex-basis: calc((100% - 4*30px)/3);
     margin-left: 30px;
     margin-top: 30px;
     border-bottom: var(--secondary-text-color-teme-light);
