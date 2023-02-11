@@ -202,18 +202,20 @@ img{
 
 .feature{
     padding-top: 94px;
-    /* padding-bottom: 94px; */
+    padding-bottom: 94px;
 }
 
 .feature-list-items{
     width: 270px;
-    gap: 30px 10px;
+
 }
 
 .feature-list{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
+    gap: 30px;
 }
 
 .feature-item{
@@ -295,15 +297,6 @@ img{
 
 /*====Start Footer====*/
 
-.footer-container{
-    /* padding-top: 60px;
-
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column; */
-}
-
-
 .page-footer{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -343,16 +336,23 @@ img{
 /*====Start Project====*/
 
 .filter-container{
-    padding-top: 90px;
-    padding-bottom: 50px;
-
+    padding-top: 94px;
+    padding-bottom: 94px;   
+    
     display: flex;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-filter {
+    padding-bottom: 34px;
+    
     display: flex;
     justify-content: center;
+}
+
+.projects-filter:not(:last-child){
+    margin-right: 8px;
 }
 
 .project-filter-button{
@@ -379,19 +379,38 @@ img{
     color: var(--primery-text-color-teme-dark);
 }
 
-.project-container{
+.project-items-list{
+    padding-top: 34px;
+
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+
+
+
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px; */
 }
 
-.project-items-list{
-    flex-basis: calc((100% - 4*30px)/3);
+.project-list-items{ 
+    flex-basis: calc((100% - 4*30px)/4);
     margin-left: 30px;
     margin-top: 30px;
     border-bottom: var(--secondary-text-color-teme-light);
 }
 
+.project-list-text{ 
+    padding: 20px 24px;
+    text-align: center;
+}
+
 .project-item{
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -406,5 +425,3 @@ img{
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-teme-dark); 
 }
-
-/*====End Project====*/
