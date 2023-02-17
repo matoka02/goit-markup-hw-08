@@ -125,19 +125,17 @@ img{
     margin-left: auto;
 
     display: flex;
-    align-items:start;
+    align-items:center;
 }
+
+.contacts-list:not(:last-child){
+    margin-right: 10px;
+}
+ 
 
 .contact-list-item:not(:last-child){
     margin-right: 50px;
 }
-
-/* .contact-item{
-    margin-left: auto;
-
-    display: flex;
-    align-items: center;
-} */
 
 .contact-mail, 
 .contact-phone {
@@ -161,6 +159,9 @@ img{
 /*====Start Hero====*/
 
 .hero{
+    max-width: 1600px;
+    margin: auto;
+
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)),
@@ -299,6 +300,7 @@ img{
     flex-basis: calc((100% - 4*30px)/4);
     margin-left: 30px;
     margin-top: 30px;
+    background-color: var(--primery-text-color-teme-dark);
     border-bottom: var(--secondary-text-color-teme-light);
 }
 
@@ -332,13 +334,15 @@ img{
 
 .social-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;  
+    
+    gap: 30px;
 }
+
 
 .social-list-icon{
     fill: var(--secondary-text-color-teme-dark);
 }
-
 
 .social-list-link{
     display: flex;
@@ -351,9 +355,10 @@ img{
     border-radius: 50%;
 }
 
-.social-list-link:hover .social-list-icon, 
-.social-list-link:focus .social-list-icon {
+.social-list-link:hover .social-list-icon .about-team-text, 
+.social-list-link:focus .social-list-icon .about-team-text{
     fill: var(--accent-color);
+    background-color: var(--primery-text-color-teme-dark);
 }
 
 /*====End Team====*/
@@ -389,6 +394,10 @@ img{
 /*====Start Footer====*/
 
 .page-footer{
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color-teme-dark);
@@ -422,11 +431,23 @@ img{
     opacity: 0.6;
 }
 
-.footer-links-container{
+
+.footer-links-container .social-list-icon {
+    background-color: var(--secondary-text-color-teme-dark);
+}
+
+.footer-links-container .social-list-icon .social-list-link:hover, 
+.footer-links-container .social-list-icon .social-list-link:focus {
+    fill: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+
+/* .footer-links-container{
     display: flex;
     gap: 70px;
     align-items: baseline;
-}
+} */
 /*====End Footer====*/
 
 /*====Start Project====*/
@@ -470,6 +491,10 @@ img{
 .project-filter-button:focus{
     background-color: var(--accent-color);
     color: var(--primery-text-color-teme-dark);
+    box-shadow: 
+        0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-items-list{
@@ -483,8 +508,18 @@ img{
     flex-basis: calc((100% - 4*30px)/4);
     margin-left: 30px;
     margin-top: 30px;
-    border-bottom: var(--secondary-text-color-teme-light);
+    border-bottom: var(--secondary-text-color-teme-light);    
 }
+
+
+.project-list-items:hover{ 
+    box-shadow: 
+        0px 1px 1px rgba(0, 0, 0, 0.12), 
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 
 .project-list-text{ 
     padding: 20px 24px;
