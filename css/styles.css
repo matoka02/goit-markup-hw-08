@@ -336,7 +336,7 @@ img{
     display: flex;
     justify-content: center;  
     
-    gap: 30px;
+    gap: 10px;
 }
 
 
@@ -396,8 +396,7 @@ img{
 .page-footer{
     display: flex;
     gap: 70px;
-    align-items: baseline;
-
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color-teme-dark);
@@ -443,11 +442,15 @@ img{
 }
 
 
-/* .footer-links-container{
+.footer-links-container{
     display: flex;
-    gap: 70px;
-    align-items: baseline;
-} */
+    margin-left: 70px;
+    align-items: center;
+}
+
+.footer-links-container>.footer-links-title{
+    color: var(--primery-text-color-teme-dark);
+}
 /*====End Footer====*/
 
 /*====Start Project====*/
