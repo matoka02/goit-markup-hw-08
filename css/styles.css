@@ -131,7 +131,7 @@ img{
 .contacts-list:not(:last-child){
     margin-right: 10px;
 }
- 
+
 
 .contact-list-item:not(:last-child){
     margin-right: 50px;
@@ -151,6 +151,8 @@ img{
 .contact-phone:hover, 
 .contact-phone:focus{
     color: var(--accent-color);
+    
+    fill: var(--accent-color);
 }
 
 
