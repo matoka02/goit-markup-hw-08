@@ -355,10 +355,11 @@ img{
     border-radius: 50%;
 }
 
-.social-list-link:hover .social-list-icon .about-team-text, 
-.social-list-link:focus .social-list-icon .about-team-text{
-    fill: var(--accent-color);
-    background-color: var(--primery-text-color-teme-dark);
+
+.social-list-link:hover .social-list-icon, 
+.social-list-link:focus .social-list-icon{
+    background-color: var(--accent-color);
+    fill: var(--primery-text-color-teme-dark);
 }
 
 /*====End Team====*/
@@ -383,6 +384,13 @@ img{
     margin-left: 30px;
     margin-top: 30px;
     border-bottom: var(--secondary-text-color-teme-light);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 
@@ -431,8 +439,8 @@ img{
 }
 
 
-.footer-links-container .social-list-icon {
-    background-color: var(--secondary-text-color-teme-dark);
+.footer-links-container .social-list-link {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-links-container .social-list-icon .social-list-link:hover, 
