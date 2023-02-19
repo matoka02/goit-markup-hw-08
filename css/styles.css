@@ -155,6 +155,23 @@ img{
     fill: var(--accent-color);
 }
 
+/* .contact-item{
+    display: block;
+    justify-content: center;
+} */
+
+
+
+/* .contact-mail::before{
+    content: "";
+    background-size: contain;
+    margin-right: 10px;
+} */
+
+.contact-item{
+    fill: var(--secondary-text-color-teme-dark);
+}
+
 
 /*====End Header====*/
 
@@ -221,12 +238,6 @@ img{
 .feature-text{
     padding-top: 94px;
 }
-
-.feature-image{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 
 .feature-list-items{
     width: 270px;
@@ -355,13 +366,14 @@ img{
     height: 44px;
     background-color: var(--primery-text-color-teme-dark);
     border-radius: 50%;
+    fill: #AFB1B8;
 }
 
 
-.social-list-link:hover .social-list-icon, 
-.social-list-link:focus .social-list-icon{
+.social-list-link:hover, 
+.social-list-link:focus{
     background-color: var(--accent-color);
-    fill: var(--primery-text-color-teme-dark);
+    fill: #FFFFFF;
 }
 
 /*====End Team====*/
@@ -445,11 +457,6 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-links-container .social-list-icon .social-list-link:hover, 
-.footer-links-container .social-list-icon .social-list-link:focus {
-    fill: var(--accent-color);
-    background-color: var(--accent-color);
-}
 
 
 .footer-links-container{
