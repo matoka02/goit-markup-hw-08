@@ -5,6 +5,7 @@
     --secondary-text-color-teme-light:#212121;
     --primery-text-color-teme-dark:#FFFFFF;
     --secondary-text-color-teme-dark:#757575;
+    --third-text-color-teme-dark: #afb1b8;
     --accent-color: #2196F3;
     --background-color-teme-dark: #2F303A;
     --background-color-teme-light: #F5F4FA;
@@ -353,10 +354,6 @@ img{
 }
 
 
-.social-list-icon{
-    fill: var(--secondary-text-color-teme-dark);
-}
-
 .social-list-link{
     display: flex;
     align-items: center;
@@ -366,14 +363,15 @@ img{
     height: 44px;
     background-color: var(--primery-text-color-teme-dark);
     border-radius: 50%;
-    fill: #AFB1B8;
+    fill: var(--third-text-color-teme-dark)
 }
+
 
 
 .social-list-link:hover, 
 .social-list-link:focus{
     background-color: var(--accent-color);
-    fill: #FFFFFF;
+    fill: var(--primery-text-color-teme-dark);
 }
 
 /*====End Team====*/
@@ -397,16 +395,30 @@ img{
     flex-basis: calc((100% - 6*30px)/6);
     margin-left: 30px;
     margin-top: 30px;
-    border-bottom: var(--secondary-text-color-teme-light);
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    width: 170px;
+    height: 92px;
 }
 
-.clients:focus {
+.clients-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    border-bottom: var(--secondary-text-color-teme-light);
+    border: 1px solid var(--third-text-color-teme-dark);
+    border-radius: 4px;
+
+    fill: var(--third-text-color-teme-dark);
+}
+
+.clients-wrapper:hover,
+.clients-wrapper:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
-
 
 
 /*====End Clients====*/
