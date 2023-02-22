@@ -107,19 +107,36 @@ img{
 }
 
 .nav-list-link{
+    position: relative;
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-teme-light);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link:hover, 
 .nav-list-link:focus{
     color: var(--accent-color);
+}
+
+.nav-list-link-hover::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 .contacts-list{
@@ -148,6 +165,8 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-teme-dark);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail:hover, 
@@ -289,6 +308,32 @@ img{
     margin-right: 30px;
 }
 
+.feature-list-photo{
+    position: relative;
+}
+
+
+.feature-list-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    width: 100%;
+    height: 70px;
+
+
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primery-text-color-teme-dark);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+
+
 /*====End Feature====*/
 
 /*====Start Team====*/
@@ -360,9 +405,11 @@ img{
     height: 44px;
     background-color: var(--primery-text-color-teme-dark);
     border-radius: 50%;
-    fill: var(--third-text-color-teme-dark)
-}
+    fill: var(--third-text-color-teme-dark);
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
 
 
 .social-list-link:hover, 
@@ -409,6 +456,9 @@ img{
     border-radius: 4px;
 
     fill: var(--third-text-color-teme-dark);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-wrapper:hover,
@@ -480,12 +530,15 @@ img{
 }
 
 .footer-links-container>.footer-links-title{
+    text-transform: uppercase;
     color: var(--primery-text-color-teme-dark);
 }
 
 .footer-links-container .social-list-link {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--primery-text-color-teme-dark);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links-container .social-list-link:hover,
@@ -493,8 +546,61 @@ img{
     background-color: var(--accent-color);
 }
 
-
 /*====End Footer====*/
+
+
+/*====Start Modal-button====*/
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    /* box-sizing: none; */
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 580px;
+    background-color: var(--primery-text-color-teme-dark);
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*====End Modal-button====*/
+
 
 /*====Start Project====*/
 
@@ -502,7 +608,6 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;   
 }
-
 
 .project-filter {
     margin-bottom: 50px;
@@ -530,8 +635,11 @@ img{
     background-color: var(--background-color-teme-light);
     text-transform: none;
     cursor: pointer;
-}
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .project-filter-button:hover, 
 .project-filter-button:focus{
@@ -558,9 +666,13 @@ img{
 }
 
 .project-list{
+    position: relative;
+
     display: block;
     width: 100%;
     height: 100%;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-list:hover, 
@@ -570,6 +682,41 @@ img{
         0px 4px 4px rgba(0, 0, 0, 0.06), 
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.project-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: '';
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 0;
+    transform: translate(-50% -50%);
+}
+
+.project-list:hover {
+    opacity: 1;
+}
+/* .feature-list-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    width: 100%;
+    height: 70px;
+
+
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primery-text-color-teme-dark);
+    background-color: rgba(47, 48, 58, 0.8);
+} */
 
 .project-list-text{ 
     padding: 20px 24px;
@@ -594,3 +741,5 @@ img{
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-teme-dark); 
 }
+
+/*====End Project====*/
