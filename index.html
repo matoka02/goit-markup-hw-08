@@ -370,14 +370,14 @@
             <div class="footer-subscription-container">
                 <strong class="footer-links-title">Підпишіться на розсилку</strong>
                 <div class="subscription-input-wrapper">
-                <form action="">
-                    <label for="" class="subscription-form-field">
-                        <input class="subscription-form-input" name="user_mail" type="email" placeholder="E-mail" required>
+                <form >
+                    <label class="subscription-form-field">
+                        <input class="subscription-form-input" name="user_mail" type="email" placeholder="E-mail">
                     </label>
                 </form>
                 <button class="subscription-form-submit-btn" type="submit">
                     Підписатися
-                    <svg class="subscription-icon" wight="24" height="24">
+                    <svg class="subscription-icon" width="24" height="24">
                         <use href="/images/sprite.svg#icon-icon-send"></use>
                     </svg>
                 </button>
@@ -390,14 +390,14 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
-                <svg class="modal-close-icon" wight="18" height="18">
+                <svg class="modal-close-icon" width="18" height="18">
                     <use href="./images/sprite.svg#close-icon"></use>
                 </svg>
             </button>
             <p class="modal-header">Залиште свої дані, ми вам передзвонимо</p>
 
-            <form action="" class="contact-form">
-                <label for="" class="contact-form-field">
+            <form class="contact-form">
+                <label class="contact-form-field">
                     <p class="contact-text-name">Ім'я</p>
                     <span class="contact-form-input-wrapper">
                         <input class="contact-form-input" name="user_name" type="text" required minlength="3">
@@ -406,7 +406,7 @@
                         </svg>
                     </span>
                 </label>
-                <label for="" class="contact-form-field">
+                <label class="contact-form-field">
                     <p class="contact-text-name">Телефон</p>
                     <span class="contact-form-input-wrapper">
                         <input class="contact-form-input" name="user_phone" type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
@@ -415,7 +415,7 @@
                         </svg>
                     </span>
                 </label>
-                <label for="" class="contact-form-field">
+                <label class="contact-form-field">
                     <p class="contact-text-name">Пошта</p>
                     <span class="contact-form-input-wrapper">
                     <input class="contact-form-input" name="user_mail" type="email" required>
@@ -424,13 +424,13 @@
                         </svg>
                     </span>
                 </label>
-                <label for="" class="contact-form-field">
+                <label class="contact-form-field">
                     <p class="contact-text-name">Коментар</p>                    
                     <textarea class="contact-form-message" name="user_message" placeholder="Введіть текст"></textarea>
                 </label>
 
                 <div class="contact-form-checkbox-wrapper">
-                    <input  class="contact-form-checkbox visuality-hidden" name="accept_policy" type="checkbox" id="policy-checkbox" required>
+                    <input class="contact-form-checkbox visuality-hidden" name="accept_policy" type="checkbox" id="policy-checkbox" required>
                     <label class="contact-form-checkbox-label" for="policy-checkbox" >
                         Погоджуюся з розсилкою та приймаю &nbsp <a href="#"> Умови договору</a>
                     </label>
