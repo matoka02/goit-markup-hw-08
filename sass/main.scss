@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './base/commons';
+@import './utils/visually-hidden';
+@import './base/container';
+
+@import './components/main-title';
+@import './components/title';
+@import './components/logo';
+@import './components/modal-btn';
+@import './components/social-list';
+@import './components/backdrop';
+
+@import './layot/header';
+@import './layot/hero';
+@import './layot/about';
+@import './layot/services';
+@import './layot/employes';
+@import './layot/clients';
+@import './layot/contact';
+@import './layot/footer';
+
+@import './layot/project-filter';
+@import './layot/project-gallery';
