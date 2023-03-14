@@ -1,6 +1,12 @@
 .our-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+    .our-clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients {
@@ -11,11 +17,23 @@
 }
 
 .clients__about {
-    flex-basis: calc((100% - 6*30px)/6);
+    flex-basis: calc((100% - 2*30px)/2);
     margin-left: 30px;
     margin-top: 30px;
-    width: 170px;
+    width: 210px;
     height: 92px;
+}
+@media screen and (min-width: 738px) {
+    .clients__about {
+        flex-basis: calc((100% - 3*30px)/3);
+        width: 226px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .clients__about {
+        flex-basis: calc((100% - 6*30px)/6);
+        width: 170px;
+    }
 }
 
 .clients__wrapper {

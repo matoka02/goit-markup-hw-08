@@ -1,38 +1,109 @@
 .feature-text {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px){
+    .feature-text{
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
 }
 
-.feature-list {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    gap: 30px;
+.feature-text>.container{
+    margin: 0;
 }
+
+// .feature-list {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+
+//     gap: 30px;
+// }
+@media screen and (min-width: 768px) {
+    .feature-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .feature-list {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0;
+        
+        gap: 30px;
+    }
+}
+
 
 .feature-list__items {
-    width: 270px;
+    width: 450px;
 }
+@media screen and (min-width: 768px) {
+    .feature-list__items {
+        width: 354px;
+        box-sizing: border-box;
+        flex-basis: 50%;
+        margin-left: 30px;
+        margin-top: 30px;
+        padding: 0;
+        line-height: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .feature-list__items {
+        width: 270px;
+    }
+    .feature-list__items:not(:last-child) {
+        padding-bottom: 30px;
+    }
+}
+
 
 .feature-list__wrapper {
     margin-bottom: 30px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: var(--background-color-teme-light);
+}
+@media screen and (min-width: 768px) {
+    .feature-list__wrapper {
+        width: 354px;
+
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    .feature-list__wrapper {
+        width: 270px;
+    }
 }
 
 .feature-list__item {
     margin-bottom: 10px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-teme-light);
+}
+@media screen and (min-width: 768px) {
+    .feature-list__item {
+        text-align: left;
+    }
 }
 
 .feature-list__text {

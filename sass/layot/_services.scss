@@ -1,6 +1,12 @@
-.feature-image {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.feature-image{
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .feature-image {
+        display: block;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .feature-list__photos {
