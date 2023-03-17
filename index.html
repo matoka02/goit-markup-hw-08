@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -24,12 +24,12 @@
                         <a class="nav-list__link link" href="portfolio.html">Портфоліо</a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__link link" href="#">Контакти</a>
+                        <a class="nav-list__link link" href="#address">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <button type="button" class="mobile-menu-btn" data-menu-open>
-                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                <svg class="mobile-menu-btn__icon" width="24" height="16">
                     <use href="./images/sprite.svg#icon-menu-burger"></use>
                 </svg>
             </button>
@@ -61,9 +61,15 @@
                     </svg>
                 </button>
                 <ul class="mobile-menu__navigation">
-                    <li class="mobile-menu__nav-list mobile-menu__nav-list-accent list">Студія</li>
-                    <li class="mobile-menu__nav-list list">Портфоліо</li>
-                    <li class="mobile-menu__nav-list list">Контакти</li>
+                    <li class="mobile-menu__nav-list list">
+                        <a class="mobile-menu__nav-item mobile-menu__nav-item--accent link" href="#">Студія</a>
+                    </li>
+                    <li class="mobile-menu__nav-list list">
+                        <a class="mobile-menu__nav-item link" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__nav-list list">
+                        <a class="mobile-menu__nav-item link" href="#address">Контакти</a>
+                    </li>
                 </ul>
                 <ul class="mobile-menu__contacts">
                     <li class="mobile-menu__contact-list list">
@@ -150,30 +156,30 @@
                 <ul class="feature-list__photos">
                     <li class="feature-list__photo list">
                         <picture>
-                            <source srcset="./images/service-desktop-001.webp 1x, ./images/service-desktop-@2x-001.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/service-desktop-001.jpg 1x, ./images/service-desktop-@2x-001.jpg 2x,"
-                                media="(min-width: 1200px)" />
+                            <source srcset="./images/service-desktop-001.webp 1x, ./images/service-desktop-@2x-001.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/service-desktop-001.jpg 1x, ./images/service-desktop-@2x-001.jpg 2x"
+                                media="(min-width: 1200px)" >
                             <img src="./images/service-desktop-001.jpg" alt="робочі інструменти">
                         </picture>
                         <strong class="feature-list__signature">Десктопні додатки</strong>
                     </li>
                     <li class="feature-list__photo list">
                         <picture>
-                            <source srcset="./images/service-desktop-002.webp 1x, ./images/service-desktop-@2x-002.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/service-desktop-002.jpg 1x, ./images/service-desktop-@2x-002.jpg 2x,"
-                                media="(min-width: 1200px)" />
+                            <source srcset="./images/service-desktop-002.webp 1x, ./images/service-desktop-@2x-002.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/service-desktop-002.jpg 1x, ./images/service-desktop-@2x-002.jpg 2x"
+                                media="(min-width: 1200px)" >
                             <img src="./images/service-desktop-002.jpg" alt="робочі інструменти">
                         </picture>
                         <strong class="feature-list__signature">Мобільні додатки</strong>
                     </li>
                     <li class="feature-list__photo list">
                         <picture>
-                            <source srcset="./images/service-desktop-003.webp 1x, ./images/service-desktop-@2x-003.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/service-desktop-003.jpg 1x, ./images/service-desktop-@2x-003.jpg 2x,"
-                                media="(min-width: 1200px)" />
+                            <source srcset="./images/service-desktop-003.webp 1x, ./images/service-desktop-@2x-003.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/service-desktop-003.jpg 1x, ./images/service-desktop-@2x-003.jpg 2x"
+                                media="(min-width: 1200px)" >
                             <img src="./images/service-desktop-003.jpg" alt="робочі інструменти">
                         </picture>
                         <strong class="feature-list__signature">Дизайнерські рішення</strong>
@@ -188,18 +194,18 @@
                 <ul class="about-team">
                     <li class="about-team__items list">
                         <picture>
-                            <source srcset="./images/emloyer-desktop-001.webp 1x, ./images/emloyer-desktop-@2x-001.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/emloyer-desktop-001.jpg 1x, ./images/emloyer-desktop-@2x-001.jpg 2x,"
-                                media="(min-width: 1200px)" />
-                            <source srcset="./images/emloyer-tablet-001.webp 1x, ./images/emloyer-tablet-@2x-001.webp 2x,"
-                                media="(min-width: 768px)" type="image/webp" />
-                            <source srcset="./images/emloyer-tablet-001.jpg 1x, ./images/emloyer-tablet-@2x-001.jpg 2x,"
-                                media="(min-width: 768px)" />
-                            <source srcset="./images/emloyer-mobile-001.webp 1x, ./images/emloyer-mobile-@2x-001.webp 2x,"
-                                media="(max-width: 767px)" type="image/webp" />
-                            <source srcset="./images/emloyer-mobile-001.jpg 1x, ./images/emloyer-mobile-@2x-001.jpg 2x,"
-                                media="(max-width: 767px)" />
+                            <source srcset="./images/emloyer-desktop-001.webp 1x, ./images/emloyer-desktop-@2x-001.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/emloyer-desktop-001.jpg 1x, ./images/emloyer-desktop-@2x-001.jpg 2x"
+                                media="(min-width: 1200px)" >
+                            <source srcset="./images/emloyer-tablet-001.webp 1x, ./images/emloyer-tablet-@2x-001.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" >
+                            <source srcset="./images/emloyer-tablet-001.jpg 1x, ./images/emloyer-tablet-@2x-001.jpg 2x"
+                                media="(min-width: 768px)" >
+                            <source srcset="./images/emloyer-mobile-001.webp 1x, ./images/emloyer-mobile-@2x-001.webp 2x"
+                                media="(max-width: 767px)" type="image/webp" >
+                            <source srcset="./images/emloyer-mobile-001.jpg 1x, ./images/emloyer-mobile-@2x-001.jpg 2x"
+                                media="(max-width: 767px)" >
                             <img src="./images/emloyer-mobile-001.jpg" alt="команда">
                         </picture>
                         <div class="about-team__text">
@@ -239,18 +245,18 @@
                     </li>
                     <li class="about-team__items list">
                         <picture>
-                            <source srcset="./images/emloyer-desktop-002.webp 1x, ./images/emloyer-desktop-@2x-002.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/emloyer-desktop-002.jpg 1x, ./images/emloyer-desktop-@2x-002.jpg 2x,"
-                                media="(min-width: 1200px)" />
-                            <source srcset="./images/emloyer-tablet-002.webp 1x, ./images/emloyer-tablet-@2x-002.webp 2x,"
-                                media="(min-width: 768px)" type="image/webp" />
-                            <source srcset="./images/emloyer-tablet-002.jpg 1x, ./images/emloyer-tablet-@2x-002.jpg 2x,"
-                                media="(min-width: 768px)" />
-                            <source srcset="./images/emloyer-mobile-002.webp 1x, ./images/emloyer-mobile-@2x-002.webp 2x,"
-                                media="(max-width: 767px)" type="image/webp" />
-                            <source srcset="./images/emloyer-mobile-002.jpg 1x, ./images/emloyer-mobile-@2x-002.jpg 2x,"
-                                media="(max-width: 767px)" />
+                            <source srcset="./images/emloyer-desktop-002.webp 1x, ./images/emloyer-desktop-@2x-002.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/emloyer-desktop-002.jpg 1x, ./images/emloyer-desktop-@2x-002.jpg 2x"
+                                media="(min-width: 1200px)" >
+                            <source srcset="./images/emloyer-tablet-002.webp 1x, ./images/emloyer-tablet-@2x-002.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" >
+                            <source srcset="./images/emloyer-tablet-002.jpg 1x, ./images/emloyer-tablet-@2x-002.jpg 2x"
+                                media="(min-width: 768px)" >
+                            <source srcset="./images/emloyer-mobile-002.webp 1x, ./images/emloyer-mobile-@2x-002.webp 2x"
+                                media="(max-width: 767px)" type="image/webp" >
+                            <source srcset="./images/emloyer-mobile-002.jpg 1x, ./images/emloyer-mobile-@2x-002.jpg 2x"
+                                media="(max-width: 767px)" >
                             <img src="./images/emloyer-mobile-002.jpg" alt="команда">
                         </picture>
                         <div class="about-team__text">
@@ -290,18 +296,18 @@
                     </li>
                     <li class="about-team__items list">
                         <picture>
-                            <source srcset="./images/emloyer-desktop-003.webp 1x, ./images/emloyer-desktop-@2x-003.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/emloyer-desktop-003.jpg 1x, ./images/emloyer-desktop-@2x-003.jpg 2x,"
-                                media="(min-width: 1200px)" />
-                            <source srcset="./images/emloyer-tablet-003.webp 1x, ./images/emloyer-tablet-@2x-003.webp 2x,"
-                                media="(min-width: 768px)" type="image/webp" />
-                            <source srcset="./images/emloyer-tablet-003.jpg 1x, ./images/emloyer-tablet-@2x-003.jpg 2x,"
-                                media="(min-width: 768px)" />
-                            <source srcset="./images/emloyer-mobile-003.webp 1x, ./images/emloyer-mobile-@2x-003.webp 2x,"
-                                media="(max-width: 767px)" type="image/webp" />
-                            <source srcset="./images/emloyer-mobile-003.jpg 1x, ./images/emloyer-mobile-@2x-003.jpg 2x,"
-                                media="(max-width: 767px)" />
+                            <source srcset="./images/emloyer-desktop-003.webp 1x, ./images/emloyer-desktop-@2x-003.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/emloyer-desktop-003.jpg 1x, ./images/emloyer-desktop-@2x-003.jpg 2x"
+                                media="(min-width: 1200px)" >
+                            <source srcset="./images/emloyer-tablet-003.webp 1x, ./images/emloyer-tablet-@2x-003.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" >
+                            <source srcset="./images/emloyer-tablet-003.jpg 1x, ./images/emloyer-tablet-@2x-003.jpg 2x"
+                                media="(min-width: 768px)" >
+                            <source srcset="./images/emloyer-mobile-003.webp 1x, ./images/emloyer-mobile-@2x-003.webp 2x"
+                                media="(max-width: 767px)" type="image/webp" >
+                            <source srcset="./images/emloyer-mobile-003.jpg 1x, ./images/emloyer-mobile-@2x-003.jpg 2x"
+                                media="(max-width: 767px)" >
                             <img src="./images/emloyer-mobile-003.jpg" alt="команда">
                         </picture>
                         <div class="about-team__text">
@@ -341,18 +347,18 @@
                     </li>
                     <li class="about-team__items list">
                         <picture>
-                            <source srcset="./images/emloyer-desktop-004.webp 1x, ./images/emloyer-desktop-@2x-004.webp 2x,"
-                                media="(min-width: 1200px)" type="image/webp" />
-                            <source srcset="./images/emloyer-desktop-004.jpg 1x, ./images/emloyer-desktop-@2x-004.jpg 2x,"
-                                media="(min-width: 1200px)" />
-                            <source srcset="./images/emloyer-tablet-004.webp 1x, ./images/emloyer-tablet-@2x-004.webp 2x,"
-                                media="(min-width: 768px)" type="image/webp" />
-                            <source srcset="./images/emloyer-tablet-004.jpg 1x, ./images/emloyer-tablet-@2x-004.jpg 2x,"
-                                media="(min-width: 768px)" />
-                            <source srcset="./images/emloyer-mobile-004.webp 1x, ./images/emloyer-mobile-@2x-004.webp 2x,"
-                                media="(max-width: 767px)" type="image/webp" />
-                            <source srcset="./images/emloyer-mobile-004.jpg 1x, ./images/emloyer-mobile-@2x-004.jpg 2x,"
-                                media="(max-width: 767px)" />
+                            <source srcset="./images/emloyer-desktop-004.webp 1x, ./images/emloyer-desktop-@2x-004.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" >
+                            <source srcset="./images/emloyer-desktop-004.jpg 1x, ./images/emloyer-desktop-@2x-004.jpg 2x"
+                                media="(min-width: 1200px)" >
+                            <source srcset="./images/emloyer-tablet-004.webp 1x, ./images/emloyer-tablet-@2x-004.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" >
+                            <source srcset="./images/emloyer-tablet-004.jpg 1x, ./images/emloyer-tablet-@2x-004.jpg 2x"
+                                media="(min-width: 768px)" >
+                            <source srcset="./images/emloyer-mobile-004.webp 1x, ./images/emloyer-mobile-@2x-004.webp 2x"
+                                media="(max-width: 767px)" type="image/webp" >
+                            <source srcset="./images/emloyer-mobile-004.jpg 1x, ./images/emloyer-mobile-@2x-004.jpg 2x"
+                                media="(max-width: 767px)" >
                             <img src="./images/emloyer-mobile-004.jpg" alt="команда">
                         </picture>
                         <div class="about-team__text">
@@ -392,7 +398,8 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>
+        <!--Our clients-->
         <section class="our-clients">
             <div class="container clients-container">
                 <h2 class="subtitle">Постійні клієнти</h2>
@@ -447,7 +454,7 @@
         <div class="container footer-container">
             <div class="footer-contacts-container">
                 <a class="logo-link link" href="#"><span class="accent">Web</span>Studio</a>
-                <address class="contact-address">
+                <address id="address" class="contact-address">
                     <span>м. Київ, пр-т Лесі Українки, 26</span>
                     <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     <a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
