@@ -1,6 +1,6 @@
 .our-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     background-color: var(--background-color-teme-light);
 }
@@ -11,27 +11,68 @@
     }
 }
 
-.about-team{
-    display: block;
-    box-sizing: border-box;
+.about-team__items{
+    margin-top: 30px;
+    width: 270px;
+    background-color: var(--primery-text-color-teme-dark);
+    border-bottom: var(--secondary-text-color-teme-light);
 }
-@media screen and (min-width: 1200px){
-    .about-team {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
-        margin-top: -30px;
+
+@media screen and (min-width: 480px){
+    .about-team__items{
+        margin-top: 0;
+        width: 450px;
     }
 }
 
 
-.about-team__items {
-    flex-basis: calc((100% - 4*30px)/4);
-    margin-left: 30px;
-    margin-top: 30px;
-    background-color: var(--primery-text-color-teme-dark);
-    border-bottom: var(--secondary-text-color-teme-light);
+@media screen and (min-width: 768px){
+    .about-team {
+        display: flex;
+        flex-wrap: wrap;
+        // margin-left: -30px;
+        // margin-top: -30px;
+    }
+    .about-team__items {
+        flex-basis: calc((100% - 2*30px)/2);
+        width: 354px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    .about-team {
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+
+    .about-team__items {
+        flex-basis: calc((100% - 4*30px)/4);
+        width: 270px;
+    }
+}
+// .our-team {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+
+//     background-color: var(--background-color-teme-light);
+// }
+
+// .about-team {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//     margin-top: -30px;
+// }
+
+// .about-team__items {
+//     flex-basis: calc((100% - 4*30px)/4);
+//     margin-left: 30px;
+//     margin-top: 30px;
+//     background-color: var(--primery-text-color-teme-dark);
+//     border-bottom: var(--secondary-text-color-teme-light);
+// }
 
 .about-team__text {
     padding: 30px 20px;
