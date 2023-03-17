@@ -1,6 +1,7 @@
+// 0px - 1199px
 .modal-button {
     min-width: 160px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     margin-top: 30px;
@@ -15,4 +16,11 @@
     background-color: var(--accent-color);
     text-transform: none;
     cursor: pointer;
+}
+
+//1200px +
+@media screen and (min-width: 1200px){
+    .modal-button{
+        padding: 10px 32px;
+    }
 }

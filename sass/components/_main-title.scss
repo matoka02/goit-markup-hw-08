@@ -1,3 +1,4 @@
+// 0px - 1199px
 .main-title {
     max-width: 360px;
     word-wrap: break-word;
@@ -10,6 +11,8 @@
     text-transform: uppercase;
     color: var(--primery-text-color-teme-dark);
 }
+
+//1200px +
 @media screen and (min-width: 1200px) {
     .main-title {
         max-width: 690px;

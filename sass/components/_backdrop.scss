@@ -1,3 +1,4 @@
+// 0px - 767px
 .backdrop {
     position: fixed;
     top: 0;
@@ -17,15 +18,14 @@
     }
 }
 
-
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 608px;
     border-radius: 4px;
     background-color: var(--primery-text-color-teme-dark);
 
@@ -65,6 +65,7 @@
 
 .modal-header {
     margin-bottom: 12px;
+    word-wrap: break-word;
 
     font-style: normal;
     font-weight: 700;
@@ -166,7 +167,7 @@
 
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
@@ -221,5 +222,24 @@
 
     &:hover, &:focus {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 528px;
+        height: 580px;
+        // transform: translate(-50%, -50%) scale(1);
+        // .backdrop.is-hidden & {
+        //     transform: translate(-50%, -50%) scale(0.75);
+        // }
+    }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .contact-form-checkbox-label {
+        font-size: 14px;
     }
 }
