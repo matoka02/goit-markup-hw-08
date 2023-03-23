@@ -66,7 +66,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 320px;
-  background-color: var(--via-magenta);
 }
 
 @media screen and (min-width: 480px) {
