@@ -3,8 +3,13 @@
     text-align: center;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-teme-light);
+}
+@media screen and (min-width: 1200px){
+    .subtitle{
+        font-size: 36px;
+    }
 }
