@@ -1,12 +1,29 @@
 .project-filter {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+    .project-filter {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project-filter {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 
 .projects-filter:not(:last-child) {
     margin-right: 8px;
+}
+@media screen and (min-width: 0px) and (max-width: 1199px){
+    .projects-filter:not(:last-child){
+    margin-bottom: 16px;
+    }
 }
 
 .project-filter-button {
