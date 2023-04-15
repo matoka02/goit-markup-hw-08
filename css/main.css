@@ -730,7 +730,7 @@ img {
 @media screen and (min-width: 1200px) {
   .feature-text {
     padding-top: 94px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
 }
 .feature-list {
