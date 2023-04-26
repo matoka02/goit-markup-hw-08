@@ -1,6 +1,9 @@
+// 0px - 1199px
 .feature-image{
     display: none;
 }
+
+// 1200px +
 @media screen and (min-width: 1200px) {
     .feature-image {
         display: block;

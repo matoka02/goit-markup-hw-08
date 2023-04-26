@@ -1,10 +1,13 @@
 .page-footer {
     display: flex;
+
     gap: 70px;
 
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color-teme-dark);
+    // Правка 18.04.23
+    justify-content: center;
 }
 
 .footer-container{
@@ -12,25 +15,7 @@
     flex-direction: column;
     align-items: center;
 }
-@media screen and (min-width: 768px){
-    .footer-container{
-        flex-direction: row;
-        align-items: baseline;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    .footer-container{
-        justify-content: space-around;
-    }
-}
 
-@media screen and (max-width: 1199px){
-    .footer-subscription-container{
-        padding-top: 60px;
-    }
-}
 .footer-subscription-container {
     display: flex;
     flex-direction: column;
@@ -42,30 +27,15 @@
         color: var(--primery-text-color-teme-dark);
     }
 }
-@media screen and (min-width: 1200px) {
-    .footer-subscription-container {
-        margin-left: auto;
-        align-items: baseline;
-    }
-}
-
 
 .subscription-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media screen and (min-width: 1200px) {
-    .subscription-form {
-        flex-direction: row;
-        align-items: baseline;
-    }
-}
-
-
 
 .subscription-form-input {
-    width: 320px;
+    width: 300px;
     height: 50px;
     padding-left: 16px;
     margin-bottom: 20px;
@@ -84,18 +54,6 @@
         border-color: var(--accent-color);
     }
 }
-@media screen and (min-width: 480px) {
-    .subscription-form-input {
-        width: 450px;
-    }
-}
-@media screen and (min-width: 1200px){
-    .subscription-form-input{
-        width: 358px;
-        margin-bottom: 0;
-    }
-}
-
 
 .subscription-form-submit-btn {
     width: 200px;
@@ -113,11 +71,6 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
-@media screen and (min-width: 1200px){
-    .subscription-form-submit-btn{
-        margin-left: 12px;
-    }
-}
 
 .subscription-form-text {
     display: flex;
@@ -133,4 +86,56 @@
 
 .subscription-icon {
     margin-left: 10px;
+}
+
+// 480px - 1199px
+@media screen and (min-width: 480px) {
+    .subscription-form-input {
+        width: 450px;
+    }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) {
+    .page-footer {
+        // Правка 18.04.23
+        justify-content: normal;
+    }
+        .footer-container {
+            flex-direction: row;
+            align-items: baseline;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer-subscription-container {
+        padding-top: 60px;
+    }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .footer-subscription-container {
+        margin-left: auto;
+        align-items: baseline;
+    }
+    .subscription-form {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .subscription-form-input {
+        width: 358px;
+        margin-bottom: 0;
+    }
+    .subscription-form-submit-btn {
+        margin-left: 12px;
+    }
 }

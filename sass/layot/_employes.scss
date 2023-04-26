@@ -1,14 +1,12 @@
 .our-team {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px; 
 
     background-color: var(--background-color-teme-light);
-}
-@media screen and (min-width: 1200px) {
-    .our-team {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+    
+    // Правка 18.04.23
+    display: flex;
+    justify-content: center;
 }
 
 .about-team__items{
@@ -17,62 +15,6 @@
     background-color: var(--primery-text-color-teme-dark);
     border-bottom: var(--secondary-text-color-teme-light);
 }
-
-@media screen and (min-width: 480px){
-    .about-team__items{
-        margin-top: 0;
-        width: 450px;
-    }
-}
-
-
-@media screen and (min-width: 768px){
-    .about-team {
-        display: flex;
-        flex-wrap: wrap;
-        // margin-left: -30px;
-        // margin-top: -30px;
-    }
-    .about-team__items {
-        flex-basis: calc((100% - 2*30px)/2);
-        width: 354px;
-        margin-left: 30px;
-        margin-top: 30px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .about-team {
-        margin-left: -30px;
-        margin-top: -30px;
-    }
-
-    .about-team__items {
-        flex-basis: calc((100% - 4*30px)/4);
-        width: 270px;
-    }
-}
-// .our-team {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-
-//     background-color: var(--background-color-teme-light);
-// }
-
-// .about-team {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-left: -30px;
-//     margin-top: -30px;
-// }
-
-// .about-team__items {
-//     flex-basis: calc((100% - 4*30px)/4);
-//     margin-left: 30px;
-//     margin-top: 30px;
-//     background-color: var(--primery-text-color-teme-dark);
-//     border-bottom: var(--secondary-text-color-teme-light);
-// }
 
 .about-team__text {
     padding: 30px 20px;
@@ -100,4 +42,54 @@
     color: var(--secondary-text-color-teme-dark);
 
     margin-bottom: 16px;
+}
+
+// 480px - 767px
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .about-team__items {
+        width: 450px;
+    }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .about-team {
+        display: flex;
+        flex-wrap: wrap;
+        // margin-left: -30px;
+        // margin-top: -30px;
+    }
+    .about-team__items {
+        flex-basis: calc((100% - 2*30px)/2);
+        width: 354px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .about-team__items:nth-child(2n+1) {
+        margin-left: 0;
+    }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .our-team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    
+        // Правка 18.04.23
+        display: block;
+    }
+    .about-team {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+
+    .about-team__items {
+        flex-basis: calc((100% - 4*30px)/4);
+        width: 270px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
 }
