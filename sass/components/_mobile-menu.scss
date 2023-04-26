@@ -1,11 +1,13 @@
+// 768px +
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
 }
 
+// 0px - 479px
 .mobile-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--primery-text-color-teme-dark);
@@ -13,7 +15,9 @@
     width: 100vw;
     height: 100vh;
 
-    overflow: auto;
+    z-index: 2;
+
+    overflow: hidden;
 
     opacity: 0;
     visibility: hidden;
@@ -60,18 +64,17 @@
     &:hover, &:focus{
         fill: var(--accent-color);
     }
-
 }
 
 .mobile-menu__nav-list:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .mobile-menu__nav-item{
     font-family: var(--primery-font-family);
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.18;
     letter-spacing: 0.02em;
 
@@ -83,7 +86,7 @@
 }
 
 .mobile-menu__contacts{
-    padding-top: 186px;
+    padding-top: 86px;
 }
 
 .mobile-menu__contact-list{
@@ -94,7 +97,7 @@
     font-family: var(--primery-font-family);
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.18;
     letter-spacing: 0.02em;
 
@@ -105,11 +108,11 @@
     font-family: var(--primery-font-family);
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.02em;
 
-    color: var(--secondary-text-color-teme-light);
+    color: var(--secondary-text-color-teme-dark);
 }
 
 .mobile-menu__links{
@@ -124,8 +127,8 @@
 .mobile-menu__link{
     font-family: var(--primery-font-family);
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.22px;
     letter-spacing: 0.02em;
 
@@ -139,4 +142,27 @@
     line-height: 15px;
 
     color: rgba(33, 33, 33, 0.2);
+}
+
+// 480px - 767px
+@media screen and (min-width: 480px) {
+    .mobile-menu__nav-list:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .mobile-menu__nav-item {
+        font-size: 40px;
+    }
+    .mobile-menu__contacts {
+        padding-top: 186px;
+    }
+    .mobile-menu__contact-mail {
+        font-size: 34px;
+    }
+    .mobile-menu__contact-tel {
+        font-size: 24px;
+    }
+    .mobile-menu__link {
+        font-weight: 500;
+        font-size: 18px;
+    }
 }

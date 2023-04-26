@@ -1,3 +1,4 @@
+// 0px - 1199px
 .subtitle {
     margin-bottom: 50px;
     text-align: center;
@@ -8,6 +9,8 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-teme-light);
 }
+
+// 1200px +
 @media screen and (min-width: 1200px){
     .subtitle{
         font-size: 36px;
