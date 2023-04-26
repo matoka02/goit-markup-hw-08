@@ -10,15 +10,16 @@
 .container{
     padding-left: 15px;
     padding-right: 15px;
-
-    width: 320px;
+    
+    // Правка 18.04.23
+    // width: 320px;
     // background-color: var(--via-magenta);
 }
 
 // 480px - 767px
 @media screen and (min-width: 480px){
     .container {
-        width: 448px;
+        width: 480px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -27,7 +28,7 @@
 // 768px - 1199px
 @media screen and (min-width: 768px) { 
     .container {
-        width: 738px;
+        width: 768px;
     }     
 }
 
